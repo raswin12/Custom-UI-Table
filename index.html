@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="#" name="keywords" />
+  <meta content="#" name="description" />
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+
+  <!-- Customized Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">
+      Customer Dashboard
+      <div class="line"></div>
+    </div>
+    <div class="container">
+      <div class="card tabs">
+        <input id="tab-1" type="radio" class="tab tab-selector" checked="checked" name="tab" />
+        <label for="tab-1" class="tab tab-primary">ORDER </label>
+        <input id="tab-2" type="radio" class="tab tab-selector" name="tab" />
+        <label for="tab-2" class="tab tab-success">CUSTOM ORDER</label>
+        <input id="tab-3" type="radio" class="tab tab-selector" name="tab" />
+        <label for="tab-3" class="tab tab-default">NEW SALES </label>
+        <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
+        <label for="tab-4" class="tab tab-warning" style="border-right: none">INVENTORY ENQUIRY</label>
+        <div class="tabsShadow"></div>
+        <div class="glider"></div>
+        <section class="content">
+          <div class="item" id="content-1">
+            <h2 class="tab-title tab-primary">JIWA Order No - 0000100817</h2>
+            <form action="#">
+              <div class="user__details">
+                <div class="input__box">
+                  <span class="details">Account No:</span>
+                  <input type="text" placeholder="E.g: John Smith" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Customer Name</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Credit Limit</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Current Balance</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Trading Status</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Term Days:</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box-check">
+                  <span>
+                    <input type="checkbox" placeholder="johnWC98" required />
+                  </span>
+                  <span class="details"> Account Hold</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row">
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Customer PO No .</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Ship Via:</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Date Ordered:</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Date Expected</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Ship To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Bill To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+            <div class="row">
+              <div id="button-new">
+              <button> create New</button>
+              </div>
+            </div>
+            <div class="row">
+              <div id="wrapper">
+                <div class="wrap">
+                  <div class="search">
+                     <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                     <button type="submit" class="searchButton">
+                       Search
+                    </button>
+                    
+                  </div>
+                  
+               </div>
+                <table id="keywords" cellspacing="0" cellpadding="0">
+                  <thead>
+                    <tr>
+                      <th>Port No</th>
+                      <th>Description</th>
+                      <th>Qty</th>
+                      <th>Sell Price</th>
+                      <th> Discount % </th>
+                      <th> Discount Given</th>
+                      <th> Unit Price</th>
+                      <th> Total Tax</th>
+                      <th> Line Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="lalign">SA050</td>
+                      <td>SWISS ARABIAN SECRET MUSK 1073 12ML</td>
+                      <td>3</td>
+                      <td>34.95 </td>
+                      <td>5.01 </td>
+                      <td> 5.25</td>
+                      <td> 33.20</td>
+                      <td> 9.96</td>
+                      <td> 109.56</td>
+                      
+                    </tr>
+                    <tr>
+                      <td class="lalign">SA050</td>
+                      <td>SWISS ARABIAN SECRET MUSK 1073 12ML</td>
+                      <td>3</td>
+                      <td>34.95 </td>
+                      <td>5.01 </td>
+                      <td> 5.25</td>
+                      <td> 33.20</td>
+                      <td> 9.96</td>
+                      <td> 109.56</td>
+                      
+                    </tr>
+                    <tr>
+                      <td class="lalign">SA050</td>
+                      <td>SWISS ARABIAN SECRET MUSK 1073 12ML</td>
+                      <td>3</td>
+                      <td>34.95 </td>
+                      <td>5.01 </td>
+                      <td> 5.25</td>
+                      <td> 33.20</td>
+                      <td> 9.96</td>
+                      <td> 109.56</td>
+                      
+                    </tr>
+                    <tr>
+                      <td class="lalign">SA050</td>
+                      <td>SWISS ARABIAN SECRET MUSK 1073 12ML</td>
+                      <td>3</td>
+                      <td>34.95 </td>
+                      <td>5.01 </td>
+                      <td> 5.25</td>
+                      <td> 33.20</td>
+                      <td> 9.96</td>
+                      <td> 109.56</td>
+                      
+                    </tr>
+                   
+                    
+                  </tbody>
+                </table>
+                <div class="pagination">
+                  <a href="#">&laquo;</a>
+                  <a href="#">1</a>
+                  <a href="#" class="active">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">&raquo;</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="one-half column">
+
+              </div> -->
+              <div class="one-half column1">
+                <table id="keywords" cellspacing="0" cellpadding="0">
+                  <thead>
+                    <tr>
+                      <th>#Items</th>
+                      <th> Order</th>
+                      <th>Total Ex</th>
+                      <th>GST</th>
+                      <th> GST Total</th>
+                      
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="lalign">5</td>
+                      <td>78.6</td>
+                      <td>32.36</td>
+                      <td>34.95 </td>
+                      <td>5.01 </td>
+            
+                   
+                      
+                    </tr>
+                    
+                    
+                   
+                    
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+          <div class="item" id="content-2">
+            <h2 class="tab-title tab-success">CUSTOM ORDER</h2>
+            <form action="#">
+              <div class="user__details">
+                <div class="input__box">
+                  <span class="details">Account No:</span>
+                  <input type="text" placeholder="E.g: John Smith" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Customer Name</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Credit Limit</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Current Balance</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Trading Status</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Term Days:</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box-check">
+                  <span>
+                    <input type="checkbox" placeholder="johnWC98" required />
+                  </span>
+                  <span class="details"> Account Hold</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row">
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Customer PO No .</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Ship Via:</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Date Ordered:</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Date Expected</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Ship To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Bill To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="item" id="content-3">
+            <h2 class="tab-title tab-default">NEW SALES</h2>
+            <form action="#">
+              <div class="user__details">
+                <div class="input__box">
+                  <span class="details">Account No:</span>
+                  <input type="text" placeholder="E.g: John Smith" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Customer Name</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Credit Limit</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Current Balance</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Trading Status</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Term Days:</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box-check">
+                  <span>
+                    <input type="checkbox" placeholder="johnWC98" required />
+                  </span>
+                  <span class="details"> Account Hold</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row">
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Customer PO No .</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Ship Via:</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Date Ordered:</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Date Expected</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Ship To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Bill To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="item" id="content-4">
+            <h2 class="tab-title tab-warning">INVENTORY ENQUIRY</h2>
+            <form action="#">
+              <div class="user__details">
+                <div class="input__box">
+                  <span class="details">Account No:</span>
+                  <input type="text" placeholder="E.g: John Smith" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Customer Name</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details">Credit Limit</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Current Balance</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Trading Status</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box">
+                  <span class="details"> Term Days:</span>
+                  <input type="text" placeholder="johnWC98" required />
+                </div>
+                <div class="input__box-check">
+                  <span>
+                    <input type="checkbox" placeholder="johnWC98" required />
+                  </span>
+                  <span class="details"> Account Hold</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row">
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Customer PO No .</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Ship Via:</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Date Ordered:</span>
+                        <input type="text" placeholder="E.g: John Smith" required />
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Date Expected</span>
+                        <input type="text" placeholder="johnWC98" required />
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="one-half column">
+                    <div class="user__details">
+                      <div class="input__box">
+                        <span class="details">Ship To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+                      <div class="input__box">
+                        <span class="details">Bill To:</span>
+                        <textarea type="text" placeholder="E.g: John Smith" required></textarea>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
